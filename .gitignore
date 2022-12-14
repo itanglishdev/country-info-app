@@ -5,9 +5,6 @@ node_modules
 /.pnp
 .pnp.js
 
-# development data
-/server/dev-data
-
 # testing
 /coverage
 
@@ -20,6 +17,8 @@ build
 .env.development.local
 .env.test.local
 .env.production.local
+.env
+
 
 npm-debug.log*
 yarn-debug.log*
