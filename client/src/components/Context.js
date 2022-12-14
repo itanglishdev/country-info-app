@@ -9,7 +9,7 @@ const ContextProvider = ({ children }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/v1/country-info")
+      .get("http://localhost:5000/api/v1/country-info")
       .then((data) => setData(data))
       .catch((err) => console.log(err));
   }, []);
