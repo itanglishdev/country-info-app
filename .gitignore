@@ -5,6 +5,9 @@ node_modules
 /.pnp
 .pnp.js
 
+# development data
+/server/dev-data
+
 # testing
 /coverage
 
