@@ -5,14 +5,14 @@ import Marker from "./Marker";
 import Back from "./Back";
 
 export default function GoogleMap() {
-  const { selectedCountry } = useContext(Context);
+  const { state } = useContext(Context);
 
   let lat = 60.116667;
   let lng = 19.9;
 
-  if (selectedCountry) {
-    lat = selectedCountry.latlng[0];
-    lng = selectedCountry.latlng[1];
+  if (state.selectedCountry) {
+    lat = state.selectedCountry.latlng[0];
+    lng = state.selectedCountry.latlng[1];
   }
 
   const defaultProps = {
