@@ -36,7 +36,13 @@ const HomePage = () => {
   const nav = useNavigate();
 
   return (
-    <div className="input-container">
+    <div className="main-page">
+      <div className="main-page__top">
+      <h1>Welcome to Country Info app</h1>
+      <p>This interactive Countries app is designed to give you information on Countries. You just simply add the country's name and you will get general information about it, pin pointed on the World's map.</p>
+      <p>Type in the box below and give it a try!</p>
+      </div>
+      <div className="input-container">
       {!countryExists && <h1>Country doesn's exist</h1>}
       <input
         className="input-field"
@@ -45,9 +51,10 @@ const HomePage = () => {
         value={countryName}
         placeholder="Put country name"
       />
-      <button onClick={showInfoHandler} className="btn">
-        Show map
+      <button onClick={showInfoHandler} className="btn btn__show">
+        Show on map
       </button>
+    </div>
     </div>
   );
 };

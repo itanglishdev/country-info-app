@@ -1,24 +1,55 @@
+.main-page__top {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 750px;
+  margin: 4rem auto;
+  font-size: 1.3rem;
+  letter-spacing: .7px;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
 .input-container {
-  background-color: aqua;
+  background-color: beige;
   border: 1px solid;
   border-radius: 6px;
   padding: 2rem;
   width: 50%;
-  margin: 10rem auto;
+  max-width: 500px;
+  height: 250px;
+  margin: 5rem auto;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   justify-content: center;
   align-items: center;
+  -webkit-box-shadow: 5px 5px 9px 0px #B2B898; 
+  box-shadow: 5px 5px 9px 0px #B2B898;
 }
 
 .input-field {
   padding: 0.5rem 2rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  border-radius: 4px;
+  border:1px solid gray;
 }
 
-.btn {
-  font-size: 2rem;
+.btn__show {
+  font-size: 1.7rem;
+  width: 220px;
+  border-radius: 6px;
+  -webkit-box-shadow: 5px 5px 15px 5px #858484; 
+  box-shadow: 5px 5px 15px 5px #acabab;
+}
+
+.btn__show:hover {
+  border-radius: 12px;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .marker {
@@ -31,6 +62,23 @@
   top: 1.5rem;
   left: 1.8rem;
   z-index: 10;
+}
+
+.g-map {
+  height: 100vh; 
+  width: 100vw;
+  position: relative;
+}
+
+.info-box {
+  position: absolute;
+  left: 2rem;
+  bottom: 10rem;
+  z-index: 10;
+  width: 200px;
+  height: 100px;
+  opacity: 0.6;
+  background-color: beige;
 }
 .back-btn {
   font-size: 1.4rem;
