@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 80%;
-  max-width: 750px;
+  max-width: 800px;
   margin: 4rem auto;
   font-size: 1.3rem;
   letter-spacing: .7px;
@@ -38,6 +38,17 @@ h1 {
   border:1px solid gray;
 }
 
+.doesnt-exist {
+  width: 400px;
+  padding: 10px 10px;
+  border: 1px solid gray;
+  background-color: #B2B898;
+  opacity: 0.8;
+  border-radius: 0 5px 0 5px;
+  position: absolute;
+  bottom: 180px;
+}
+
 .btn__show {
   font-size: 1.7rem;
   width: 220px;
@@ -70,16 +81,33 @@ h1 {
   position: relative;
 }
 
-.info-box {
+.info-box, .flag-box {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px;
   position: absolute;
-  left: 2rem;
-  bottom: 10rem;
   z-index: 10;
-  width: 200px;
-  height: 100px;
-  opacity: 0.6;
+  opacity: 0.75;
+  font-size: 1.2rem;
+  border-radius: 4px;
   background-color: beige;
 }
+
+.info-box {
+  left: 2rem;
+  bottom: 10rem;
+  width: 250px;
+}
+
+.flag-box {
+  right: 2rem;
+  top: 10rem;
+  width: 250px;
+}
+
+.flag-box__flag {
+  width: 250px;
+}
+
 .back-btn {
   font-size: 1.4rem;
   border-radius: 2px;
@@ -94,4 +122,16 @@ h1 {
   border-radius: 9px;
   transform: scale(1.15);
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: .8rem;
+  color: #000000;
 }

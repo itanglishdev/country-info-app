@@ -4,6 +4,7 @@ import GoogleMapReact from "google-map-react";
 import Marker from "./Marker";
 import Back from "./Back";
 import InfoBox from './InfoBox'
+import FlagBox from './FlagBox'
 
 export default function GoogleMap() {
   const { selectedCountry } = useContext(Context);
@@ -39,6 +40,7 @@ export default function GoogleMap() {
           text={<i class="fa-solid fa-location-crosshairs"></i>}
         />
       </GoogleMapReact>
+      <FlagBox/>
       <InfoBox/>
     </div>
   );
