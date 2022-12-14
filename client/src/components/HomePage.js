@@ -4,6 +4,7 @@ import Filter from "./Filter";
 import { useNavigate } from "react-router-dom";
 import { useContext, useState, useEffect } from "react";
 import { Context } from "./Context";
+import Footer from "./Footer";
 
 const HomePage = () => {
   const [countryExists, setCountryExists] = useState(true);
@@ -60,6 +61,17 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
+      <div className="main-page__top">
+        <h1>Welcome to the Country Info app</h1>
+        <p>
+          This interactive info about Countries app is designed to give you
+          information on Countries. You just simply add the country's name and
+          you will get general information about it, pin pointed on the World's
+          map.
+        </p>
+        <p>Type in the box below and give it a try!</p>
+      </div>
+
       <Filter />
       {!countryExists && (
         <h1 className="err-msg">Country name doesn't exist</h1>
@@ -81,6 +93,8 @@ const HomePage = () => {
           ""
         )}
       </div>
+
+      <Footer />
     </div>
   );
 };
