@@ -81,7 +81,7 @@ h1 {
   position: relative;
 }
 
-.info-box, .flag-box {
+.info-box, .flag-box{
   font-family: 'Courier New', Courier, monospace;
   padding: 15px;
   position: absolute;
@@ -89,23 +89,33 @@ h1 {
   opacity: 0.75;
   font-size: 1.2rem;
   border-radius: 4px;
-  background-color: beige;
 }
 
 .info-box {
   left: 2rem;
   bottom: 10rem;
   width: 250px;
+  background-color: beige;
+
 }
 
 .flag-box {
-  right: 2rem;
-  top: 10rem;
-  width: 250px;
+  right: 10px;
+  top: 17rem;
+  width: 350px;
+  margin-right: 20px;
 }
 
 .flag-box__flag {
-  width: 250px;
+  width: 150px;
+  border-radius: 50%;
+  transition: all .4s;
+}
+
+.flag-box__flag:hover {
+  border-radius: 3px;
+  transform: scale(2);
+  animation-delay: .8s;
 }
 
 .back-btn {
@@ -116,6 +126,7 @@ h1 {
   -webkit-box-shadow: 0px -1px 15px 5px #000000; 
   box-shadow: 0px -1px 15px 5px #000000;
   transition: all .4s;
+  opacity: 1;
 }
 
 .back-btn:hover {
@@ -126,6 +137,10 @@ h1 {
 
 a {
   text-decoration: none;
+ 
+}
+a:hover {
+  font-weight: bold;
 }
 
 footer p {
