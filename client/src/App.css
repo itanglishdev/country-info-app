@@ -116,6 +116,7 @@ h1 {
   border-radius: 3px;
   transform: scale(2);
   animation-delay: .8s;
+  cursor: pointer;
 }
 
 .back-btn {
