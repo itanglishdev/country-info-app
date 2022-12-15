@@ -1,16 +1,12 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./components/HomePage";
-import GoogleMap from "./components/GoogleMap";
+import { BrowserRouter } from "react-router-dom";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/map" element={<GoogleMap />} />
-        </Routes>
+        <AnimatedRoutes />
       </BrowserRouter>
     </div>
   );

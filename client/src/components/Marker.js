@@ -1,7 +1,7 @@
 const Marker = ({ text }) => {
   return (
     <div className="marker">
-      <i className="fa-solid fa-location-crosshairs"></i>
+      <i className="fa-solid fa-location-pin"></i>
     </div>
   );
 };

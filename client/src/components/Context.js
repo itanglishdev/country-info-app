@@ -1,23 +1,38 @@
-import axios from "axios";
-import { createContext, useState, useEffect } from "react";
+import { createContext, useReducer } from "react";
 
 export const Context = createContext();
 
-const ContextProvider = ({ children }) => {
-  const [data, setData] = useState({});
-  const [selectedCountry, setSelectedCountry] = useState("");
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "get all data":
+      return { ...state, data: action.payload };
+    case "select country object":
+      return { ...state, selectedCountry: action.payload };
+    case "set country name":
+      return { ...state, countryName: action.payload };
+    case "erase country name":
+      return { ...state, countryName: "" };
+    case "get filtered country names":
+      return { ...state, filteredCountryNames: action.payload };
+    case "erase filtered country names":
+      return { ...state, filteredCountryNames: [] };
+    default:
+      return state;
+  }
+};
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:5000/api/v1/country-info")
-      .then((data) => setData(data))
-      .catch((err) => console.log(err));
-  }, []);
+const ContextProvider = ({ children }) => {
+  const initialState = {
+    data: {},
+    selectedCountry: {},
+    countryName: "",
+    filteredCountryNames: [],
+  };
+
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <Context.Provider value={{ data, selectedCountry, setSelectedCountry }}>
-      {children}
-    </Context.Provider>
+    <Context.Provider value={{ state, dispatch }}>{children}</Context.Provider>
   );
 };
 
