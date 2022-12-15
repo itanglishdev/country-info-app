@@ -1,8 +1,11 @@
 import React, { useContext } from "react";
 import { Context } from "./Context";
+import { motion } from "framer-motion";
 import GoogleMapReact from "google-map-react";
 import Marker from "./Marker";
 import Back from "./Back";
+import FlagBox from "./FlagBox";
+import InfoBox from "./InfoBox";
 
 export default function GoogleMap() {
   const { state } = useContext(Context);
@@ -25,7 +28,13 @@ export default function GoogleMap() {
 
   return (
     // Important! Always set the container height explicitly
-    <div style={{ height: "100vh", width: "100%" }}>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+      className="g-map"
+      style={{ height: "100vh", width: "100%" }}
+    >
       <Back />
       <GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
@@ -38,6 +47,8 @@ export default function GoogleMap() {
           text={<i class="fa-solid fa-location-crosshairs"></i>}
         />
       </GoogleMapReact>
-    </div>
+      <FlagBox />
+      <InfoBox />
+    </motion.div>
   );
 }

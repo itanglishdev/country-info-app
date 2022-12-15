@@ -1,4 +1,4 @@
-import "../components/Filter.css";
+import "../components/style/Filter.css";
 import { useContext } from "react";
 import { Context } from "./Context";
 

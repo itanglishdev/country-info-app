@@ -1,17 +1,12 @@
 import { Context } from "./Context";
 import { useContext } from "react";
 
-
 function FlagBox() {
+  const { state } = useContext(Context);
 
-
-  const { selectedCountry} = useContext(Context);
-
-
-  return (  
+  return (
     <div className="flag-box">
-      <img src={selectedCountry.flag} alt=""  className="flag-box__flag"/>
-      
+      <img src={state.selectedCountry.flag} alt="" className="flag-box__flag" />
     </div>
   );
 }

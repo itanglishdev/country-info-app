@@ -32,3 +32,79 @@ body {
   font-size: 1.4rem;
   border-radius: 2px;
 }
+.g-map {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.info-box,
+.flag-box {
+  padding: 15px;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.75;
+  font-size: 1.4rem;
+  border-radius: 4px;
+}
+
+.info-box__main {
+  margin-bottom: 1rem;
+}
+
+.info-text {
+  line-height: 1.2;
+}
+
+.info-box {
+  left: 2rem;
+  top: 15rem;
+  width: 250px;
+  background-color: beige;
+}
+
+.flag-box {
+  left: 8rem;
+  top: 45rem;
+  width: 350px;
+  margin-right: 20px;
+}
+
+.flag-box__flag {
+  width: 150px;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.flag-box__flag:hover {
+  border-radius: 3px;
+  transform: scale(2);
+  animation-delay: 0.8s;
+  cursor: pointer;
+}
+
+.back-btn {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  border-radius: 2px;
+  width: 100px;
+  height: 40px;
+  -webkit-box-shadow: 0px -1px 15px 5px #000000;
+  box-shadow: 0px -1px 15px 5px #000000;
+  transition: all 0.4s;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.back-btn:hover {
+  border-radius: 9px;
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bold;
+}

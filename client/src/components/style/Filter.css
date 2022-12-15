@@ -1,7 +1,8 @@
 .filter-container {
   position: absolute;
-  width: 70%;
-  top: 20%;
+  max-width: 55rem;
+  width: 50%;
+  top: 40%;
   left: 50%;
   transform: translateX(-50%);
   overflow: scroll;

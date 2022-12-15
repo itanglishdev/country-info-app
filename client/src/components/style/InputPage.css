@@ -4,9 +4,10 @@
 }
 
 .input-box {
-  width: 70%;
+  max-width: 55rem;
+  width: 50%;
   position: fixed;
-  top: 15%;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
