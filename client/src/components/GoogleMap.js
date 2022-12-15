@@ -23,7 +23,7 @@ export default function GoogleMap() {
       lat: lat,
       lng: lng,
     },
-    zoom: 5,
+    zoom: 7,
   };
 
   return (

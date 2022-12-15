@@ -13,13 +13,13 @@ html {
 body {
   font-size: 1.6rem;
   background-color: beige;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   user-select: none;
 }
 
 .marker {
-  font-size: 2rem;
-  color: red;
+  font-size: 3rem;
+  color: #fff;
 }
 
 .btn-container {
@@ -53,7 +53,7 @@ body {
 }
 
 .info-text {
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .info-box {
@@ -65,7 +65,7 @@ body {
 
 .flag-box {
   left: 8rem;
-  top: 45rem;
+  top: 50rem;
   width: 350px;
   margin-right: 20px;
 }
@@ -84,7 +84,7 @@ body {
 }
 
 .back-btn {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 1.6rem;
   border-radius: 2px;
   width: 100px;

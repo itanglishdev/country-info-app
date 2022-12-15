@@ -13,12 +13,12 @@
   transform: translateX(-50%);
 }
 .heading {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 4rem;
 }
 .about-text {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .request {
   font-size: 2rem;

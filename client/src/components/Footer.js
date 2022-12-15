@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
       <p>
         Group project at DCI by{" "}
-        <a href={"https://github.com/ezekielbuzzi"}>Hezikiel</a>,{" "}
+        <a href={"https://github.com/ezekielbuzzi"}>Hizkiel</a>,{" "}
         <a href={"https://github.com/Thili007"}>Thili</a> and{" "}
         <a href={"https://github.com/itanglishdev"}>Chris</a> . All right
         reserved. Copyright {date}
